@@ -1,0 +1,73 @@
+<!doctype html><html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Свій букет — FLÔR</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/flor-v5.css"><link rel="stylesheet" href="css/flor-v6.css"><link rel="stylesheet" href="css/flor-v7.css"><link rel="stylesheet" href="css/flor-v8.css"><link rel="stylesheet" href="css/flor-v9.css"></head><body><div class="rv-topnote flor-topline"><span>✧ &nbsp; ЛИСТИ ПРО ЛЮБОВ, НАПИСАНІ КВІТАМИ &nbsp; ✧</span><span>FLÔR FLOWER ATELIER</span></div>
+<header class="site-header rv-header flor-site-header">
+ <button class="nav-toggle rv-mobile-menu" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span aria-hidden="true">☰</span></button>
+ <a class="logo rv-brand flor-logo" href="home.php" aria-label="FLÔR — головна">FLÔR<small>flower atelier</small></a>
+ <nav class="site-nav rv-nav flor-nav" id="site-nav" aria-label="Основне меню">
+  <a class="" href="home.php">Головна</a>
+  <a class="" href="shop.php?type=bouquet">Готові букети</a>
+  <a class="active" href="builder.php">Створи свій букет</a>
+  <a class="" href="shop.php?type=gift">Квіткові подарунки</a>
+ </nav>
+ <div class="header-actions rv-head-actions flor-head-actions">
+    <a class="rv-icon-link" href="login.php" aria-label="Увійти" title="Увійти"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 20c0-4.2 3.2-6.7 7.5-6.7s7.5 2.5 7.5 6.7"/></svg></a>
+  <a class="rv-icon-link rv-cart" href="cart.php" title="Кошик" aria-label="Кошик"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h16l-1.3 12H5.3L4 8Z"/><path d="M8 9V6a4 4 0 018 0v3"/></svg><span>0</span></a>
+ </div>
+</header>
+<main class="builder-page f5-builder-page">
+ <div class="breadcrumbs"><a href="home.php">Головна</a> / <span>Створи свій букет</span></div>
+ <div class="f5-builder-head"><div><span class="f5-kicker">FLÔR CUSTOM / 01</span><h1>Створи свій букет.</h1><p>Оберіть квіти і кількість — ми покажемо, як виглядатиме класична композиція з трьома рівнями висоти та однією точкою зборки.</p></div><span class="l9-builder-accessory">Квіти доступні лише тут — у конструкторі</span></div>
+ <div class="f5-builder-path"><span class="active">01 / Квіти</span><span>02 / Пакування</span><span>03 / У кошик</span></div>
+ <form method="post" id="bouquet-form" class="bouquet-builder f5-builder-layout"><input type="hidden" name="csrf_token" value="216621613cdc919879bbebd91834b03de130941d62555536163c1a98cd9ae467"> <div class="builder-editor f5-builder-editor">
+  <div class="f5-step-heading"><div><span class="f5-step-number">01</span><h2>Які квіти додамо?</h2></div><p>Усі доступні стебла — з каталогу. Натисніть «+», щоб додати квітку.</p></div>
+  <div class="flower-picker f5-picker">
+      <article class="picker-item f5-picker-item" data-flower-id="1">
+    <img src="media/singles/pink_rose.jpg" alt="Рожева троянда" loading="lazy" onerror="this.onerror=null;this.src='assets/flower-placeholder.svg'">
+    <div class="picker-text"><h3>Рожева троянда</h3><span class="picker-price">85 ₴ / шт.</span><small>Є в наявності: 45</small></div>
+    <label class="l9-tier-label">Розташування <select name="tier[1]" aria-label="Рівень для Рожева троянда"><option value="auto">Авто</option><option value="high">Вище</option><option value="middle">Середина</option><option value="front">Ближче</option></select></label><div class="stepper"><button type="button" data-step="-1" aria-label="Прибрати одну квітку">−</button><input type="number" name="flowers[1]" min="0" max="45" value="0" aria-label="Кількість Рожева троянда" inputmode="numeric"><button type="button" data-step="1" aria-label="Додати одну квітку">+</button></div>
+   </article><article class="picker-item f5-picker-item" data-flower-id="2">
+    <img src="media/singles/red_tulip.jpg" alt="Червоний тюльпан" loading="lazy" onerror="this.onerror=null;this.src='assets/flower-placeholder.svg'">
+    <div class="picker-text"><h3>Червоний тюльпан</h3><span class="picker-price">55 ₴ / шт.</span><small>Є в наявності: 60</small></div>
+    <label class="l9-tier-label">Розташування <select name="tier[2]" aria-label="Рівень для Червоний тюльпан"><option value="auto">Авто</option><option value="high">Вище</option><option value="middle">Середина</option><option value="front">Ближче</option></select></label><div class="stepper"><button type="button" data-step="-1" aria-label="Прибрати одну квітку">−</button><input type="number" name="flowers[2]" min="0" max="60" value="0" aria-label="Кількість Червоний тюльпан" inputmode="numeric"><button type="button" data-step="1" aria-label="Додати одну квітку">+</button></div>
+   </article><article class="picker-item f5-picker-item" data-flower-id="3">
+    <img src="media/singles/yellow_tulip.jpg" alt="Жовтий тюльпан" loading="lazy" onerror="this.onerror=null;this.src='assets/flower-placeholder.svg'">
+    <div class="picker-text"><h3>Жовтий тюльпан</h3><span class="picker-price">55 ₴ / шт.</span><small>Є в наявності: 50</small></div>
+    <label class="l9-tier-label">Розташування <select name="tier[3]" aria-label="Рівень для Жовтий тюльпан"><option value="auto">Авто</option><option value="high">Вище</option><option value="middle">Середина</option><option value="front">Ближче</option></select></label><div class="stepper"><button type="button" data-step="-1" aria-label="Прибрати одну квітку">−</button><input type="number" name="flowers[3]" min="0" max="50" value="0" aria-label="Кількість Жовтий тюльпан" inputmode="numeric"><button type="button" data-step="1" aria-label="Додати одну квітку">+</button></div>
+   </article><article class="picker-item f5-picker-item" data-flower-id="4">
+    <img src="media/singles/lavender_rose.jpg" alt="Лавандова троянда" loading="lazy" onerror="this.onerror=null;this.src='assets/flower-placeholder.svg'">
+    <div class="picker-text"><h3>Лавандова троянда</h3><span class="picker-price">95 ₴ / шт.</span><small>Є в наявності: 24</small></div>
+    <label class="l9-tier-label">Розташування <select name="tier[4]" aria-label="Рівень для Лавандова троянда"><option value="auto">Авто</option><option value="high">Вище</option><option value="middle">Середина</option><option value="front">Ближче</option></select></label><div class="stepper"><button type="button" data-step="-1" aria-label="Прибрати одну квітку">−</button><input type="number" name="flowers[4]" min="0" max="24" value="0" aria-label="Кількість Лавандова троянда" inputmode="numeric"><button type="button" data-step="1" aria-label="Додати одну квітку">+</button></div>
+   </article><article class="picker-item f5-picker-item" data-flower-id="5">
+    <img src="media/singles/spray_rose.jpg" alt="Кущова троянда" loading="lazy" onerror="this.onerror=null;this.src='assets/flower-placeholder.svg'">
+    <div class="picker-text"><h3>Кущова троянда</h3><span class="picker-price">120 ₴ / шт.</span><small>Є в наявності: 18</small></div>
+    <label class="l9-tier-label">Розташування <select name="tier[5]" aria-label="Рівень для Кущова троянда"><option value="auto">Авто</option><option value="high">Вище</option><option value="middle">Середина</option><option value="front">Ближче</option></select></label><div class="stepper"><button type="button" data-step="-1" aria-label="Прибрати одну квітку">−</button><input type="number" name="flowers[5]" min="0" max="18" value="0" aria-label="Кількість Кущова троянда" inputmode="numeric"><button type="button" data-step="1" aria-label="Додати одну квітку">+</button></div>
+   </article><article class="picker-item f5-picker-item" data-flower-id="6">
+    <img src="media/singles/white_lily.jpg" alt="Біла лілія" loading="lazy" onerror="this.onerror=null;this.src='assets/flower-placeholder.svg'">
+    <div class="picker-text"><h3>Біла лілія</h3><span class="picker-price">140 ₴ / шт.</span><small>Є в наявності: 30</small></div>
+    <label class="l9-tier-label">Розташування <select name="tier[6]" aria-label="Рівень для Біла лілія"><option value="auto">Авто</option><option value="high">Вище</option><option value="middle">Середина</option><option value="front">Ближче</option></select></label><div class="stepper"><button type="button" data-step="-1" aria-label="Прибрати одну квітку">−</button><input type="number" name="flowers[6]" min="0" max="30" value="0" aria-label="Кількість Біла лілія" inputmode="numeric"><button type="button" data-step="1" aria-label="Додати одну квітку">+</button></div>
+   </article>  </div>
+  <div class="f5-step-heading"><div><span class="f5-step-number">02</span><h2>Оберіть пакування</h2></div><p>Одна класична форма букета — без зайвих режимів. Пакування входить у вартість.</p></div>
+  <div class="f5-wrap-options" role="radiogroup" aria-label="Колір пакування"><label><input type="radio" name="wrap" value="cream" checked><span><i style="background:#e8dfd4"></i>Молочне</span></label><label><input type="radio" name="wrap" value="blush"><span><i style="background:#e1c2c6"></i>Пудрове</span></label><label><input type="radio" name="wrap" value="kraft"><span><i style="background:#c4a68b"></i>Крафт</span></label></div>
+  <label for="bouquet-note" class="f5-note-label">Побажання флористу <small>(необов’язково)</small></label><textarea id="bouquet-note" name="note" maxlength="300" class="field" rows="3" placeholder="Наприклад: без зайвих декоративних деталей"></textarea>
+ </div>
+ <aside class="builder-preview-panel f5-builder-preview"><div class="preview-heading"><div><span class="f5-kicker">ПРИБЛИЗНИЙ ПЕРЕГЛЯД</span><h2>Ваш букет</h2></div><span class="f5-preview-label">КЛАСИЧНИЙ</span></div>
+  <div class="bouquet-photo-stage f5-bouquet-stage wrap-cream" id="bouquet-photo-stage" aria-label="Попередній вигляд букета з вибраних квітів">
+   <div class="paper-back" id="paper-back"></div><div class="photo-stems" id="photo-stems"></div><div class="paper-front" id="paper-front"><div class="paper-fold paper-fold-left"></div><div class="paper-fold paper-fold-right"></div><div class="paper-ribbon"></div></div>
+   <div id="preview-empty" class="f5-preview-empty"><span>＋</span><b>Почніть з однієї квітки</b><p>Виберіть квіти ліворуч — і ми складемо класичний букет тут.</p></div>
+   <span class="preview-count" id="photo-count" hidden></span>
+  </div>
+  <p class="preview-disclaimer">Ескіз із реальних фото окремих квітів: три рівні висоти, стебла сходяться до спільної точки. Готова композиція може відрізнятися.</p>
+  <div class="bouquet-summary f5-bouquet-summary"><div class="summary-title"><b>Склад композиції</b><span id="flower-count">0 квітів</span></div><div id="chosen-flowers" class="chosen-flowers"><p>Додайте квіти — тут з’явиться склад.</p></div><div class="total-line"><span>Вартість квітів</span><strong id="bouquet-total">0 ₴</strong></div><button class="btn btn-wide" type="submit" name="create_bouquet" value="1" id="builder-submit" disabled>Додати до кошика <span>↗</span></button><p class="summary-footnote">Доступна кількість перевіряється під час оформлення замовлення.</p></div>
+ </aside></form>
+ <script id="flower-data" type="application/json">[{"id":1,"name":"Рожева троянда","price":85,"stock":45,"image":"media\/singles\/pink_rose.jpg","cutout":"media\/cutouts\/pink_rose.png"},{"id":2,"name":"Червоний тюльпан","price":55,"stock":60,"image":"media\/singles\/red_tulip.jpg","cutout":"media\/cutouts\/red_tulip.png"},{"id":3,"name":"Жовтий тюльпан","price":55,"stock":50,"image":"media\/singles\/yellow_tulip.jpg","cutout":"media\/cutouts\/yellow_tulip.png"},{"id":4,"name":"Лавандова троянда","price":95,"stock":24,"image":"media\/singles\/lavender_rose.jpg","cutout":"media\/cutouts\/lavender_rose.png"},{"id":5,"name":"Кущова троянда","price":120,"stock":18,"image":"media\/singles\/spray_rose.jpg","cutout":"media\/cutouts\/spray_rose.png"},{"id":6,"name":"Біла лілія","price":140,"stock":30,"image":"media\/singles\/white_lily.jpg","cutout":"media\/cutouts\/white_lily.png"}]</script>
+</main><footer class="site-footer rv-footer flor-footer">
+ <div class="flor-footer-top"><img src="assets/flor-ornament.svg" alt="" aria-hidden="true"><span>ЗАВЖДИ З ЛЮБОВ'Ю ДО КВІТІВ</span><img src="assets/flor-ornament.svg" alt="" aria-hidden="true"></div>
+ <div class="flor-footer-main">
+  <div class="flor-footer-intro"><a href="home.php" class="flor-footer-logo">FLÔR</a><p>Нехай кожен день має привід для маленької красивої історії.</p><span>Flower atelier · made with love</span></div>
+  <div class="flor-footer-list"><h3>Колекція</h3><a href="shop.php?type=bouquet">Готові букети</a><a href="shop.php?type=gift">Квіткові подарунки</a><a href="builder.php">Створити букет</a></div>
+  <div class="flor-footer-list"><h3>Допомога</h3><a href="about.php">Наша історія</a><a href="reviews.php">Відгуки</a><a href="orders.php">Мої замовлення</a><a href="contact.php">Контакти</a></div>
+  <div class="flor-footer-note"><img src="assets/flor-seal.svg" alt="" aria-hidden="true"><p>Flowers are little letters<br>from the heart.</p><a href="shop.php?type=bouquet">Обрати букет ↗</a></div>
+ </div>
+ <div class="flor-footer-bottom"><span>© 2026 FLÔR · Навчальний проєкт</span><span>Фотографії композицій: Pexels · Валюта: ₴</span></div>
+</footer>
+<script src="js/script.js" defer></script>
+<script src="js/builder.js" defer></script></body></html>
